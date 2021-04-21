@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartNotes</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2daeac6a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/smartNotes.css">
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <h1><i class="far fa-clipboard"></i> Smart<span>Notes</span></h1>
+        </div>
+        <div class="menu-buttons">
+            <button class="add icon"><i class="far fa-plus-square"></i> Add note</button>
+            <button class="delete-all icon"><i class="fas fa-trash-alt"></i> Delete all</button>
+        </div>
+    </div>
+    
+    <div class="note-area">
+   
+    <div class="note-panel">
+        <h2>add note</h2>
+        <label for="category">Select category</label>
+        <select id="category" onchange="selectValue()">
+            <option value="0" disabled selected>- select category -</option>
+            <option value="1">Home</option>
+            <option value="1">Work</option>
+            <option value="1">Shopping</option>
+            <option value="1">Appointments</option>
+            <option value="1">Others</option>
+        </select>
+
+        <label for="text">Text of your note</label>
+        <textarea id="text" placeholder="Your text..."></textarea>
+
+        <p class="error">Please fill in the required information.</p>
+
+        <div class="panel-buttons">
+            <button class="save icon"><i class="far fa-save"></i> Save</button>
+            <button class="cancel icon"><i class="fas fa-window-close"></i> Cancel</button>
+        </div>
+    </div>
+
+    <script src="./js/smartNotes.js"></script>
+</body>.
+
+</html>

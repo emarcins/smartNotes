@@ -1,0 +1,243 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f3f3f3;
+  font-size: 1.6rem;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7rem;
+  padding: 6rem;
+}
+
+.menu h1 {
+  font-size: 3rem;
+}
+
+.menu h1 i {
+  font-size: 3.5rem;
+}
+
+.menu h1 span {
+  color: #0000CD;
+}
+
+.menu-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  padding-bottom: 3.5rem;
+}
+
+.main button,
+.note-panel .save,
+.note-panel .cancel {
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  -webkit-transition: background-color .4s, color .4s;
+  transition: background-color .4s, color .4s;
+}
+
+.main button:hover,
+.note-panel .save:hover,
+.note-panel .cancel:hover {
+  background-color: #0000CD;
+  color: #fff;
+}
+
+.note-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+}
+
+.note-area .note {
+  margin: 1rem 2rem;
+  width: 30rem;
+  border: 2px solid #000;
+}
+
+.note-area .note .note-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.note-area .note .note-body {
+  padding: 1.8rem 1.5rem;
+  font-size: 1.4rem;
+}
+
+.note-header .delete-note {
+  background: none;
+  font-size: 1.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+.note-panel {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 4rem 0;
+  width: 30rem;
+  background-color: #e6e6e6;
+  -webkit-box-shadow: 0 0 1rem #000;
+          box-shadow: 0 0 1rem #000;
+  border-radius: 0.5rem;
+}
+
+.note-panel h2 {
+  margin-top: -2rem;
+  margin-bottom: 2.2rem;
+  text-transform: uppercase;
+}
+
+.note-panel label {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+.note-panel #text, .note-panel #category {
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  width: 75%;
+  max-width: 90%;
+  max-height: 50rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000;
+}
+
+.note-panel .error {
+  margin-left: 4rem;
+  margin-bottom: 1.4rem;
+  color: #B22222;
+  visibility: visible;
+}
+
+@media (max-width: 413px) {
+  .main .menu h1 {
+    font-size: 2.5rem;
+  }
+  .main .menu h1 i {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 414px) {
+  .note-area .note {
+    margin: 2rem 3rem;
+    width: 35rem;
+  }
+}
+
+@media (min-width: 645px) {
+  .note-area .note {
+    margin: 2rem 2rem;
+    width: 26rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5rem;
+    height: 15rem;
+  }
+  .main .menu-buttons {
+    margin-top: 2.5rem;
+  }
+  .note-panel {
+    width: 60rem;
+  }
+  .note-area .note {
+    margin: 2rem 3rem;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .note-area .note {
+    margin: 4rem 3rem;
+    width: 25rem;
+  }
+}
+/*# sourceMappingURL=smartNotes.css.map */
