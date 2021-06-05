@@ -30,4 +30,4 @@ The language of the app is english.
 # Try the app!
 Don't hesitate and click the link below to try the smartNotes! ⤵️
 </br>
-Check out the smartNotes app
+[Check out the smartNotes app](https://emarcins.github.io/smartNotes/)
