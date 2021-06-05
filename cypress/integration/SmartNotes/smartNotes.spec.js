@@ -1,4 +1,4 @@
-import { addNewShoppingNote } from "./../../support/utils";
+import { addNewNote } from "./../../support/utils";
 
 describe("SmartNotes App testing", () => {
   context("Page loading ", () => {
@@ -22,13 +22,13 @@ describe("SmartNotes App testing", () => {
     const thirdTypingValue = "Call with Boss on Teams at 10 a.m.";
 
     it("Add first note - Click the Add note button, select Shopping, enter text and confirm save button", () => {
-      addNewShoppingNote(shoppingValue, firstTypingValue);
+      addNewNote(shoppingValue, firstTypingValue);
     });
     it("Add second note - Click the Add note button, select Work, enter text and confirm save button", () => {
-      addNewShoppingNote(workValue, secondTypingValue);
+      addNewNote(workValue, secondTypingValue);
     });
     it("Add third note - Click the Add note button, select Appointments, enter text and confirm save button", () => {
-      addNewShoppingNote(appointmentsValue, thirdTypingValue);
+      addNewNote(appointmentsValue, thirdTypingValue);
     });
 
     context("Delete note", () => {
