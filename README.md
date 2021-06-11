@@ -28,7 +28,7 @@ You can delete every single note (click on "X" icon) but if want you can also cl
 The language of the app is english.
 
 # How it looks? 🖼️
-[smartNotesApp]()
+![smartNotesApp](https://i.imgur.com/6GghG6p.png)
 
 # Try the app!
 Don't hesitate and click the link below to try the smartNotes! ⤵️
